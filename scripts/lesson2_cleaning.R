@@ -10,6 +10,8 @@ data_clean <- data %>%
   filter(name == "Michael") %>%
   mutate(name = factor(name)) %>%
   filter(year > 1900) %>%
-  filter(year <= 2000)
+  filter(year <= 2000) %>%
+  mutate(prop_loge = log(prop)) %>%
+  mutate(prop_log10 = log10(prop))
 
 xtabs(~name, data_clean)
