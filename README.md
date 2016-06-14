@@ -1,1 +1,0 @@
-This code is part of a series of lessons in the R course "R for Publication". The course information can be found here http://pagepiccinini.com/r-course/. Details about the lesson can be found here http://pagepiccinini.com/r-course/lesson-2-linear-regression/.
