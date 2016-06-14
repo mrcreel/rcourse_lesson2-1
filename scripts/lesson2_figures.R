@@ -5,7 +5,8 @@ source("scripts/lesson2_cleaning.R")
 library(ggplot2)
 
 ## ORGANIZE DATA ####
-data_figs = data_clean
+data_figs = data_clean %>%
+  mutate(sex = factor(sex, levels=c("F", "M"), labels=c("female", "male")))
 
 ## MAKE FIGURES ####
 
@@ -48,3 +49,5 @@ sex.plot = ggplot(data_figs, aes(x = sex, y = prop_log10)) +
 # pdf("figures/sex.pdf")
 sex.plot
 # dev.off()
+
+
