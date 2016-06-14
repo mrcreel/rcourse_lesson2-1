@@ -49,5 +49,3 @@ sex.plot = ggplot(data_figs, aes(x = sex, y = prop_log10)) +
 # pdf("figures/sex.pdf")
 sex.plot
 # dev.off()
-
-
